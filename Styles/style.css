@@ -129,3 +129,10 @@ button:active {
     border-color: transparent;
     background-color: transparent;
 } */
+.test {
+    border-radius: 23px;
+    -webkit-border-radius: 23px;
+    -moz-border-radius: 23px;
+    -ms-border-radius: 23px;
+    -o-border-radius: 23px;
+}
