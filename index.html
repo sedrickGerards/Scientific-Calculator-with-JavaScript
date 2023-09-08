@@ -22,7 +22,7 @@
         </div>
     </div> -->
 
-    <main>
+    <main class="calculator">
 
         
         <section class="output-container">
@@ -31,7 +31,7 @@
             </div>
 
             <div class="expression output-display"> 
-                <p>089 bf7tfitftfytf687t7656455354</p>
+                <p>0</p>
             </div>
 
         </section>
@@ -43,16 +43,16 @@
         <section class="input-container">
 
             <div class="calc-row row-1">
-                <button type="button"> C</button>
+                <button type="button" data-action="clear"> C</button>
                 <button type="button"><iconify-icon icon="cil:delete"></iconify-icon></button>
             </div>
 
 
             <div class="calc-row row-2">
-                <button type="onclick"> Sin </button>
-                <button type="button"> Cos </button>
-                <button type="button"> Tan </button>
-                <button type="button"> . </button>
+                <button class="button"> Sin </button>
+                <button class="button"> Cos </button>
+                <button class="button"> Tan </button>
+                <button class="button" data-action="decimal"> . </button>
             </div>
 
 
@@ -60,7 +60,7 @@
                 <button type="button">7</button>
                 <button type="button">8</button>
                 <button type="button">9</button>
-                <button type="button">/</button>
+                <button type="button" class="key-operator" data-action=" divide">/</button>
             </div>
 
 
@@ -68,7 +68,7 @@
                 <button type="button">4</button>
                 <button type="button">5</button>
                 <button type="button">6</button>
-                <button type="button">x</button>
+                <button type="button" class="key-operator" data-action="multiply" >x</button>
             </div>
 
 
@@ -76,20 +76,20 @@
                 <button type="button">1</button>
                 <button type="button">2</button>
                 <button type="button">3</button>
-                <button type="button">-</button>
+                <button type="button" class="key-operator" data-action="subtract" >-</button>
             </div>
 
 
             <div class="calc-row row-6">
                 <button type="button"> 0 </button>
-                <button type="button"> = </button>
+                <button type="button"  class="equals-to" data-action="calculate"> = </button>
                 <!-- <button type="button"></button> -->
-                <button type="button"> + </button>
+                <button type="button" class="key-operator" data-action="add" > + </button>
             </div>
         </section>
     </main>
 
-    <script src="calculator.js"></script>
+    <script src="/JS/calculator.js"></script>
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
 </body>
 </html>
