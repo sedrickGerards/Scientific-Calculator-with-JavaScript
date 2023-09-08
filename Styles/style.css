@@ -122,7 +122,7 @@ button:active {
 .row-2{
     display: flex;
     flex-shrink: 1;
-
+font-size: 24px ;
 }
 
 /* .row-2 button{
