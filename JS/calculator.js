@@ -109,6 +109,40 @@
 
 // const handleClick = (event) => {
 //     const value = event.target.textContent
+
+    
+//     // if (value === 'calculate') {
+//     //     console.log('equal key!')
+//     //   }
+//     console.log(value);
+// }
+
+// buttons.forEach(button => {
+//     button.addEventListener('click', handleClick)
+// })
+
+// const inputField = document.getElementById('expression');
+
+
+//  function insertNum (num) {
+
+
+
+//     return inputField.textContent += num
+    
+// }
+// // console.log(inputField.textContent);
+
+// const outputField = document.getElementById('answer');
+
+// function equalTo () {
+//         if (outputField.textContent == true) {
+//         return outputField.textContent = eval( inputField.textcontent) ;
+//     } else {
+//         return false;
+//     }
+
+// =======
     
 //     // if (value === 'calculate') {
 //     //     console.log('equal key!')
@@ -129,8 +163,9 @@ const inputField = document.getElementById('expression');
 
     return inputField.textContent += num
     
+
 }
-// console.log(inputField.textContent);
+console.log(inputField.textContent);
 
 const outputField = document.getElementById('answer');
 
@@ -149,6 +184,7 @@ const eraseNum = () => inputField.textContent = inputField.textContent.substring
 
 
 const clearInput = () => inputField.textContent = '';
+
 
 
 
