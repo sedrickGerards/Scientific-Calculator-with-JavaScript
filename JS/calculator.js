@@ -130,7 +130,7 @@ const inputField = document.getElementById('expression');
     return inputField.textContent += num
     
 }
-// console.log(inputField.textContent);
+console.log(inputField.textContent);
 
 const outputField = document.getElementById('answer');
 
