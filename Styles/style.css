@@ -134,5 +134,11 @@ button:active {
     -webkit-border-radius: 23px;
     -moz-border-radius: 23px;
     -ms-border-radius: 23px;
-    -o-border-radius: 23px;
+    -o-border-radius: 23px;} 
+
+.third-testn{
+    color:red;
+}
+.second-testn{
+    color:red;
 }
