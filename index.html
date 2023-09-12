@@ -26,70 +26,72 @@
 
         
         <section class="output-container">
-            <div class="answer output-display">
-               <p>Ans</p>
+            <div id="expression" class=" - output-display">
+                <!-- <p>0</p> -->
             </div>
-
-            <div class="expression output-display"> 
-                <p>0</p>
+            
+            <div id="answer" class=" output-display"> 
+                <p>Ans</p>
             </div>
 
         </section>
 
 
-
+ 
 
 
         <section class="input-container">
 
             <div class="calc-row row-1">
-                <button type="button" data-action="clear"> C</button>
-                <button type="button"><iconify-icon icon="cil:delete"></iconify-icon></button>
+                <button class="btn btn-num" onclick="clearInput()" data-action="clear"> C </button>
+
+                <button class="btn btn-operator" onclick="eraseNum()" ><iconify-icon icon="cil:delete"></iconify-icon></button>
             </div>
 
 
             <div class="calc-row row-2">
-                <button class="button"> Sin </button>
-                <button class="button"> Cos </button>
-                <button class="button"> Tan </button>
-                <button class="button" data-action="decimal"> . </button>
+                <button id="error" class="btn btn-operator1" onclick="insertNum('error! (currently not functional)')"> Sin </button>
+                <button id="error" class="btn btn-operator1" onclick="insertNum('error! (currently not functional)')"> Cos </button>
+                <button id="error" class="btn btn-operator1" onclick="insertNum('error! (currently not functional)')"> Tan </button>
+                <button class="btn btn-num" onclick="insertNum('.')"> . </button>
             </div>
 
 
             <div class="calc-row row-3">
-                <button type="button">7</button>
-                <button type="button">8</button>
-                <button type="button">9</button>
-                <button type="button" class="key-operator" data-action=" divide">/</button>
+                <button class="btn btn-num" onclick="insertNum(7)">7</button>
+                <button class="btn btn-num" onclick="insertNum(8)">8</button>
+                <button class="btn btn-num" onclick="insertNum(9)">9</button>
+                <button class="btn btn-operator" onclick="insertNum(' / ')" class="key-operator" data-action=" divide">/</button>
             </div>
 
 
             <div class="calc-row row-4">
-                <button type="button">4</button>
-                <button type="button">5</button>
-                <button type="button">6</button>
-                <button type="button" class="key-operator" data-action="multiply" >x</button>
+                <button class="btn btn-num" onclick="insertNum(4)">4</button>
+                <button class="btn btn-num" onclick="insertNum(5)">5</button>
+                <button class="btn btn-num" onclick="insertNum(6)">6</button>
+                <button class="btn btn-operator" onclick="insertNum(' * ')">x</button>
             </div>
 
 
             <div class="calc-row row-5">
-                <button type="button">1</button>
-                <button type="button">2</button>
-                <button type="button">3</button>
-                <button type="button" class="key-operator" data-action="subtract" >-</button>
+                <button class="btn btn-num" onclick="insertNum(1)">1</button>
+                <button class="btn btn-num" onclick="insertNum(2)">2</button>
+                <button class="btn btn-num" onclick="insertNum(3)">3</button>
+                <button class="btn btn-operator" onclick="insertNum(' - ')" >-</button>
             </div>
 
 
             <div class="calc-row row-6">
-                <button type="button"> 0 </button>
-                <button type="button"  class="equals-to" data-action="calculate"> = </button>
-                <!-- <button type="button"></button> -->
-                <button type="button" class="key-operator" data-action="add" > + </button>
+                <button class="btn btn-num" onclick="insertNum(0)" onclick="insertNum(0)"> 0 </button>
+                <button class="btn btn-operator equal" onclick="equalTo()" > = </button>
+                <!-- <button class="btn btn-num" onclick="insertNum(2)"></button> -->
+                <button class="btn btn-num" onclick="insertNum(' + ')" > + </button>
             </div>
         </section>
     </main>
 
     <script src="/JS/calculator.js"></script>
+
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
 </body>
 </html>
